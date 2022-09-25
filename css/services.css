@@ -1,0 +1,46 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.card-img-top{
+    width: 100%;
+    height:200px;
+    object-fit: contain;
+}
+.footer{
+    position:fixed;
+    background-color: rgb(3, 3, 85);
+    color: aliceblue;
+    text-align: center;
+    bottom: 0;
+}
+.navbar{
+    background-color: rgb(3, 3, 85);
+}
+.navbar-brand{
+    color: aliceblue;
+}
+.nav-link active{
+    color: aliceblue;
+}
+.nav-link{
+    color: aliceblue;
+}
+#home{
+    color: aliceblue;
+}
+.btn{
+    background-color: rgb(3, 3, 85);
+    color: aliceblue;
+}
+.totalP{
+    color:  rgb(3, 3, 85);
+}

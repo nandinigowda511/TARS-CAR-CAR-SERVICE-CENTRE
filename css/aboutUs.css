@@ -1,0 +1,137 @@
+:root{
+    --blue:#201b5c;
+  }
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+  }
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+body{
+    background:#f7f7f7;
+  }
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding:1rem;
+    color:#666;
+  }
+
+.heading:hover{
+  text-decoration: underline;
+  color: var(--blue);
+}
+  
+.heading span{
+    color:var(--blue);
+  }
+
+.box-container{
+  background-color: #666;
+}
+
+.content{
+    float: left;
+    width: 55%;
+    padding: 2rem;
+  }
+  
+  .imageSection{
+    float: right;
+    width: 40%;
+    padding-top: 8rem;
+  }
+  
+  .imageSection img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .content .article h3{
+    color:#000000;
+    font-size: 17px;
+  }
+  
+  .content .article p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  #check{
+    display: none;
+  }
+    
+  .readMore {
+    display: none;
+    transition: 0.5s linear;
+  }
+  
+  label{
+    margin-top: 10px; 
+    display: inline-block; 
+    color: #201b5c; 
+    text-decoration: underline; 
+    cursor: pointer; 
+    font-weight: 600;
+    font-size: large;
+  } 
+  
+  #check:checked ~ .readMore{
+    display: block;
+  }
+  
+  #check:checked ~ label{
+    visibility: hidden;
+    font-size: large;
+    margin-top: 10px;
+  }
+  
+  #check:checked ~ label:after{
+    content: 'Show Less';
+    display: block;
+    visibility: visible;
+  }
+  
+  
+  @media screen and (max-width: 768px){
+  
+    .content{
+      float: none;
+      width: 100%;
+      display: block;
+      margin: auto;
+    }
+  
+    .imageSection{
+      float: none;
+      width: 100%;
+      margin-top: 50px;
+    }
+  
+    .imageSection img{
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+    
+  }

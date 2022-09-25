@@ -1,0 +1,123 @@
+:root{
+    --blue:#201b5c;
+  }
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+  }
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+body{
+    background:#f7f7f7;
+  }
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding:1rem;
+    color:#666;
+  }
+
+.heading:hover{
+  text-decoration: underline;
+  color: var(--blue);
+}
+  
+.heading span{
+    color:var(--blue);
+  }
+
+.box-container{
+ width: 70%;
+ height: 80vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: var(--blue);
+ margin-top: 30px;
+ margin-left: 15%;
+ border-radius: 0.5rem;
+}
+
+form{
+    width:100%;
+    max-width: 600px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group{
+    flex-basis: 48%;
+}
+
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    color: var(--blue);
+    font-size: 18px;
+    border-radius: 0.5rem;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--blue);
+    cursor: text;
+    transition: 0.2s;
+}
+
+button{
+    padding: 10px 0;
+    color: var(--blue);
+    font-size: 16px;
+    outline: none;
+    background: #fff;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    color: #fff;
+}
+
+button:hover{
+    background-color: var(--blue);
+    color: #fff;
+    border: 2.5px solid #fff;
+    font-size: 17px;
+}
